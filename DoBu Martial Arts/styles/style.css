@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body{
+    background-color: 	#ede8f5;
+    font-family: sans-serif;
+    padding-top: 80px;
+}
+header{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+
+}
+
+.header-content{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    margin-bottom: 50px;
+    color: 	white;
+    text-align: center;
+
+}
+
+.header-content h1{
+    margin-top: 100px;
+    font-size: 60px;
+    font-weight: bold;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px;
+    margin-bottom: 30px;
+}
+
+.introduction-text{
+    font-size: 30px;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        padding: 10px;
+        text-align: center;
+    }
+    .introduction-text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    .introduction-text {
+        font-size: 0.9rem;
+    }
+    .btn-lg {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+.benefit {
+    margin-bottom: 1.5rem;
+}
+
+
+  .nav-link:hover {
+    background-color: white;
+  }
+
+  .nav-link:active{
+    background-color: rgb(161, 161, 161);
+  }
+
+  .navbar-nav .btn {
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 10px 50px;
+    margin-left: 10px;
+}
+
+
+
+.btn-signup:hover,
+.btn-login:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #adbbda;
+    padding: 2rem 0;
+}
+
+footer img {
+    margin: 0 10px;
+}
+
+.contact-us-btn{
+    border: none;
+    margin-top: 20px;
+}
+
+.contact-us-btn:hover{
+    background-color: #7091e6;
+}
+.instructor-name{
+    font-weight: bold;
+    color: 	#000000;
+    font-size: 40px;
+    
+}
+
+.instructor-desc{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.instructor-detail{
+    font-size: 25px;
+}
+
+.classes-card{
+
+    height: 350px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: 	#8697c4;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px darkblue;
+    margin-bottom: 40px;
+
+}
+
+
+.table {
+    background-color: #fff;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+}
+
+.table thead th {
+    background-color: #343a40;
+    color: #fff;
+    border-color: #454d55;
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #e0e0e0;
+}
+
+.table-bordered {
+    border: 2px solid #6c757d;
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #6c757d;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .table-responsive {
+        margin-bottom: 1.5rem;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
+
+    .table thead {
+        display: none;
+    }
+
+    .table tbody tr {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    .table tbody td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: right;
+        padding-left: 1rem;
+        position: relative;
+    }
+
+    .table tbody td::before {
+        content: attr(data-label);
+        flex: 1;
+        text-align: left;
+        font-weight: bold;
+        padding-right: 1rem;
+    }
+}
+
+.membership-card {
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    text-align: left;
+    text-decoration: none;
+    color: inherit; 
+    display: block; 
+    background-color: 	#3d52a0;
+}
+.membership-card:hover {
+    background-color: #2e4186; 
+    color: #000000;
+    text-decoration: none;
+    
+} 
+.membership-card:active{
+    background-color: #25315c;
+    transform: translateY(-10px);
+    
+}
+.membership-card h3 {
+    font-weight: bold;
+    color: white;
+}
+.membership-price {
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-align: right; 
+}
+.description-text{
+    text-align: left;
+    font-size: 20px;
+    color: white;
+}
+
+.form-control{
+    background-color: #ede8f5;
+}
